@@ -1,8 +1,10 @@
 # Machine Learning Journey
 
-This repository documents my progress through the Machine Learning Specialization by DeepLearning.AI and Stanford Online.
+This repository documents my progress through the **Machine Learning Specialization** by DeepLearning.AI and Stanford Online.
 
-It contains my implementations, exercises, and notes on fundamental machine learning concepts, including supervised learning, neural networks, model evaluation, regularization, and unsupervised learning.
+It contains my implementations, programming assignments, and notes on fundamental machine learning concepts, including supervised learning, neural networks, model evaluation, decision trees, unsupervised learning, and clustering.
+
+---
 
 ## Course 1: Supervised Machine Learning — Regression and Classification
 
@@ -20,6 +22,10 @@ Topics covered:
 - Overfitting
 - Regularization
 
+Through these exercises, I developed an understanding of the foundations of supervised machine learning and the optimization techniques used to train regression and classification models.
+
+---
+
 ## Course 2: Advanced Learning Algorithms
 
 ### Neural Networks
@@ -31,6 +37,7 @@ Topics covered:
 - Forward Propagation
 - TensorFlow Sequential Models
 - Activation Functions
+- Binary Classification
 - Multiclass Classification
 - Softmax Regression
 - Sparse Categorical Cross-Entropy
@@ -57,68 +64,54 @@ Topics covered:
 - Comparing Training and Cross-Validation Error
 - Selecting the Regularization Parameter (Lambda)
 
+### Decision Trees
+
+Topics covered:
+
+- Entropy
+- Dataset Splitting
+- Information Gain
+- Selecting the Best Feature for a Split
+- Recursive Tree Construction
+- Decision Tree Learning
+
+In the Decision Trees assignment, I implemented the core components of a decision tree algorithm, including entropy calculation, dataset splitting, information gain computation, and best-feature selection.
+
+---
+
 ## Course 3: Unsupervised Learning, Recommenders, Reinforcement Learning
 
 ### Unsupervised Learning
 
-Topics covered:
+Topics covered so far:
 
 - Unsupervised Learning
 - Clustering
 - K-means Clustering
 - Cluster Assignment
-- Computing Cluster Centroids
-- K-means Optimization Objective
+- Centroid Updates
+- K-means Cost Function
 - Random Initialization
-- Selecting the Number of Clusters
+- Choosing the Number of Clusters
 - Image Compression with K-means
 
-### K-means Clustering Programming Assignment
+### K-means Clustering Assignment
 
-In this assignment, I implemented the K-means clustering algorithm and applied it to image compression.
+Implemented the K-means clustering algorithm from its core components and applied it to image compression.
 
-The main tasks included:
+Main tasks included:
 
-- Implementing K-means clustering using NumPy
-- Computing the closest centroid for each training example
-- Assigning data points to clusters based on Euclidean distance
-- Recomputing cluster centroids from assigned data points
+- Finding the closest centroid for each training example
+- Assigning examples to clusters
+- Recomputing cluster centroids
 - Iteratively updating cluster assignments and centroid positions
-- Exploring random initialization of cluster centroids
+- Understanding the effect of random initialization
 - Applying K-means clustering to image pixels
-- Compressing an image by reducing the number of colors represented in the image
+- Compressing an image by reducing the number of colors
 
-## Recent Assignments
+This assignment provided practical experience with unsupervised learning and demonstrated how clustering can be used beyond conventional data analysis tasks.
 
-### Model Evaluation and Regularization
-
-In this assignment, I explored techniques for evaluating machine learning models and improving their ability to generalize to unseen data.
-
-The main tasks included:
-
-- Implementing mean squared error for regression model evaluation
-- Implementing classification error for categorical predictions
-- Splitting data into training, cross-validation, and test sets
-- Comparing training and cross-validation performance
-- Diagnosing high bias and high variance
-- Building simple and complex neural network architectures
-- Investigating the effect of model complexity on overfitting
-- Applying L2 regularization to neural networks
-- Comparing regularized and unregularized models
-- Exploring different regularization strengths to improve generalization
-
-### K-means Clustering
-
-In this assignment, I implemented the core components of the K-means clustering algorithm from scratch and used the algorithm for image compression.
-
-The implementation included:
-
-- Finding the closest centroid for each data point
-- Computing updated centroid means
-- Iteratively refining cluster assignments
-- Initializing centroids
-- Applying K-means to RGB image data
-- Reconstructing an image using a reduced color palette
+---
 
 ## Tools and Technologies
 
@@ -128,21 +121,45 @@ The implementation included:
 - Scikit-learn
 - Matplotlib
 - Jupyter Notebook
+- Git / GitHub
+
+---
 
 ## Key Concepts
 
-Through these exercises, I am developing a practical understanding of both supervised and unsupervised machine learning workflows.
+Through these exercises, I am developing practical understanding of the machine learning workflow across both supervised and unsupervised learning.
 
-For supervised learning:
+### Supervised Learning
 
 **Data → Model → Training → Validation → Model Selection → Regularization → Testing**
 
-For unsupervised learning:
+### Decision Trees
 
-**Data → Initialization → Cluster Assignment → Centroid Update → Iteration → Evaluation / Application**
+**Dataset → Entropy → Information Gain → Best Split → Decision Tree**
 
-A key focus is understanding not only how machine learning algorithms work, but also how to implement their core components, evaluate their performance, diagnose potential problems, and apply them to practical tasks.
+### K-means Clustering
 
-## Repository Purpose
+**Data → Initialize Centroids → Cluster Assignment → Centroid Update → Repeat Until Convergence**
 
-This repository serves as a record of my machine learning studies and practical implementations. It will continue to be updated as I progress through the Machine Learning Specialization and explore additional topics in machine learning.
+A key focus of this repository is understanding not only how machine learning algorithms are used, but also how their underlying components can be implemented and interpreted.
+
+---
+
+## Repository Structure
+
+```text
+Machine-Learning-Journey/
+│
+├── course-1-supervised-machine-learning/
+│
+├── course-2-advanced-learning-algorithms/
+│   ├── 01_Neural_Network_Binary_Classification.ipynb
+│   ├── 02_Neural_Network_Multiclass_Classification.ipynb
+│   ├── 03_Model_Evaluation_and_Regularization.ipynb
+│   ├── 04_Decision_Trees.ipynb
+│   └── README.md
+│
+├── course-3-unsupervised-learning/
+│   └── 01_KMeans_Clustering.ipynb
+│
+└── README.md
