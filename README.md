@@ -2,7 +2,7 @@
 
 This repository documents my progress through the **Machine Learning Specialization** by DeepLearning.AI and Stanford Online.
 
-It contains my implementations, programming assignments, and notes on fundamental machine learning concepts, including supervised learning, neural networks, model evaluation, decision trees, unsupervised learning, and clustering.
+It contains my implementations and programming assignments covering fundamental machine learning concepts, including supervised learning, neural networks, model evaluation, decision trees, unsupervised learning, clustering, and recommender systems.
 
 ---
 
@@ -83,7 +83,7 @@ In the Decision Trees assignment, I implemented the core components of a decisio
 
 ### Unsupervised Learning
 
-Topics covered so far:
+Topics covered:
 
 - Unsupervised Learning
 - Clustering
@@ -97,7 +97,7 @@ Topics covered so far:
 
 ### K-means Clustering Assignment
 
-Implemented the K-means clustering algorithm from its core components and applied it to image compression.
+Implemented the core components of the K-means clustering algorithm and applied the algorithm to image compression.
 
 Main tasks included:
 
@@ -109,7 +109,40 @@ Main tasks included:
 - Applying K-means clustering to image pixels
 - Compressing an image by reducing the number of colors
 
-This assignment provided practical experience with unsupervised learning and demonstrated how clustering can be used beyond conventional data analysis tasks.
+This assignment provided practical experience with unsupervised learning and demonstrated how clustering can be applied beyond conventional data analysis tasks.
+
+### Recommender Systems
+
+Topics covered:
+
+- Collaborative Filtering
+- User and Item Parameters
+- Movie Rating Prediction
+- Collaborative Filtering Cost Function
+- Regularization
+- Mean Normalization
+- TensorFlow Automatic Differentiation
+- Gradient-Based Optimization
+- Personalized Recommendations
+
+### Collaborative Filtering Recommender System Assignment
+
+Implemented a collaborative filtering model for a movie recommender system.
+
+Main tasks included:
+
+- Representing movie and user parameters with latent feature vectors
+- Predicting user ratings using learned user and movie parameters
+- Implementing the collaborative filtering cost function
+- Adding L2 regularization to control model complexity
+- Using a vectorized TensorFlow implementation of the cost function
+- Normalizing movie ratings
+- Training model parameters using TensorFlow's `GradientTape`
+- Optimizing the model with the Adam optimizer
+- Generating personalized movie rating predictions
+- Ranking unseen movies to produce recommendations
+
+This assignment provided practical experience with the mathematical foundations of collaborative filtering and the implementation of a complete recommendation pipeline.
 
 ---
 
@@ -120,6 +153,7 @@ This assignment provided practical experience with unsupervised learning and dem
 - TensorFlow / Keras
 - Scikit-learn
 - Matplotlib
+- Pandas
 - Jupyter Notebook
 - Git / GitHub
 
@@ -127,7 +161,7 @@ This assignment provided practical experience with unsupervised learning and dem
 
 ## Key Concepts
 
-Through these exercises, I am developing practical understanding of the machine learning workflow across both supervised and unsupervised learning.
+Through these exercises, I am developing a practical understanding of the machine learning workflow across supervised learning, unsupervised learning, and recommender systems.
 
 ### Supervised Learning
 
@@ -141,7 +175,11 @@ Through these exercises, I am developing practical understanding of the machine 
 
 **Data → Initialize Centroids → Cluster Assignment → Centroid Update → Repeat Until Convergence**
 
-A key focus of this repository is understanding not only how machine learning algorithms are used, but also how their underlying components can be implemented and interpreted.
+### Collaborative Filtering
+
+**User–Item Ratings → Latent Features → Cost Function → Optimization → Rating Prediction → Recommendations**
+
+A key focus of this repository is understanding not only how machine learning algorithms are used, but also how their underlying mathematical and computational components can be implemented and interpreted.
 
 ---
 
@@ -160,6 +198,8 @@ Machine-Learning-Journey/
 │   └── README.md
 │
 ├── course-3-unsupervised-learning/
-│   └── 01_KMeans_Clustering.ipynb
+│   ├── 01_KMeans_Clustering.ipynb
+│   ├── 02_Collaborative_Filtering_Recommender_System.ipynb
+│   └── README.md
 │
 └── README.md
